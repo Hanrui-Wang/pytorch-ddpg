@@ -61,11 +61,11 @@ def train(num_iterations, agent, env,  evaluate, validate_steps, output, max_epi
         if done: # end of episode
             if debug: prGreen('#{}: episode_reward:{} steps:{}'.format(episode,episode_reward,step))
 
-            agent.memory.append(
-                observation,
-                agent.select_action(observation),
-                0., False
-            )
+            #agent.memory.append(
+            #    observation,
+            #    agent.select_action(observation),
+            #    0., False
+            #)
 
             # reset
             observation = None
